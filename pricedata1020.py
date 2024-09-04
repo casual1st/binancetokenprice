@@ -5,7 +5,7 @@ from datetime import datetime
 import time
 from concurrent.futures import ThreadPoolExecutor
 
-def fetch_binance_data(symbol='ETHUSDT', interval='1m', limit=1):
+def fetch_binance_data(symbol=None, interval='1m', limit=1):
     url = "https://api.binance.com/api/v3/klines"
     params = {
         'symbol': symbol,
